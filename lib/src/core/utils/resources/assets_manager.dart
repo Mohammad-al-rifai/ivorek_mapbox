@@ -7,6 +7,7 @@ class ImageAssets {
 }
 
 class IconsAssets {
+  static const String marker = "$imagePath/marker.png";
   static const String home = "$iconsPath/home.svg";
 }
 

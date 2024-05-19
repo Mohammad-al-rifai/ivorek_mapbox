@@ -35,6 +35,8 @@ dependencies:
   mapbox_maps_flutter: ^1.1.0
   shared_preferences: ^2.2.3
   flutter_dotenv: ^5.1.0
+  location: ^6.0.2
+
 
 
   # The following adds the Cupertino Icons font to your application.
