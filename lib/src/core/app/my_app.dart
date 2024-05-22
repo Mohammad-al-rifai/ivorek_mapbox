@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:mapbox/src/presentation/cubits/mapbox_cubit/map_box_cubit.dart';
 
 import '../../presentation/views/splash/splash_view.dart';
 import '../themes/themes_manager.dart';
@@ -21,11 +23,16 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: AppStrings.ivorekMap,
-      debugShowCheckedModeBanner: false,
-      theme: getApplicationTheme(),
-      home: const SplashView(),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(create: (context) => MapBoxCubit()),
+      ],
+      child: MaterialApp(
+        title: AppStrings.ivorekMap,
+        debugShowCheckedModeBanner: false,
+        theme: getApplicationTheme(),
+        home: const SplashView(),
+      ),
     );
   }
 }

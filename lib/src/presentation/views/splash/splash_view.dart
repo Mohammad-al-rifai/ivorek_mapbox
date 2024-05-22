@@ -7,8 +7,8 @@ import 'package:location/location.dart';
 import '../../../core/utils/constants/constants_manager.dart';
 import '../../../core/utils/resources/assets_manager.dart';
 import '../../../core/utils/resources/color_manager.dart';
-import '../../../data/data_sources/lacal/cache/cache_helper.dart';
-import '../../../data/data_sources/lacal/cache/keys.dart';
+import '../../../data/data_sources/local/cache/cache_helper.dart';
+import '../../../data/data_sources/local/cache/keys.dart';
 import '../../layouts/home_layout/home_layout.dart';
 
 class SplashView extends StatefulWidget {
